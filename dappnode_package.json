@@ -1,0 +1,31 @@
+{
+  "name": "zcash.avado.dnp.dappnode.eth",
+  "version": "0.0.1",
+  "upstream": "v5.2.0",
+  "description": "Zcash is a digital currency - fast and confidential with low fees.",
+  "avatar": "/ipfs/QmWETpX7JuWE8vgBCQ8BpofP6RqywvjZiYvahAmSPVzxza",
+  "type": "service",
+  "author": "AVADO",
+  "autoupdate": true,
+  "title": "Zcash Full Node",
+  "image": {
+    "restart": "always",
+    "volumes": [
+      "zcash-data-dir:/srv/zcashd/.zcash",
+      "zcash-params-dir:/srv/zcashd/.zcash-params"
+    ],
+    "ports": [
+      "8233:8233"
+    ],
+    "environment": [
+      "ZCASHD_RPCUSER=avado",
+      "ZCASHD_RPCPASSWORD=avado",
+      "ZCASHD_RPCPORT=8232",
+      "ZCASHD_ALLOWIP=0.0.0.0/32"
+    ]
+  },
+  "contributors": [
+    "heeckhau"
+  ],
+  "license": "MIT"
+}
