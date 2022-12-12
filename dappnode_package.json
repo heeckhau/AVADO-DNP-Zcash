@@ -1,7 +1,7 @@
 {
   "name": "zcash.avado.dnp.dappnode.eth",
-  "version": "0.0.1",
-  "upstream": "v5.2.0",
+  "version": "0.0.2",
+  "upstream": "v5.3.2",
   "description": "Zcash is a digital currency - fast and confidential with low fees.",
   "avatar": "/ipfs/QmWETpX7JuWE8vgBCQ8BpofP6RqywvjZiYvahAmSPVzxza",
   "type": "service",

@@ -1,5 +1,5 @@
 ARG VERSION
-FROM --platform=linux/amd64 electriccoinco/zcashd:latest
+FROM --platform=linux/amd64 electriccoinco/zcashd:${VERSION}
 #https://github.com/zcash/zcash/blob/master/contrib/docker/Dockerfile
 
 VOLUME /srv/zcashd/.zcash/

@@ -1,16 +1,16 @@
 version: '3.4'
 services:
   zcash.avado.dnp.dappnode.eth:
-    image: 'zcash.avado.dnp.dappnode.eth:0.0.1'
+    image: 'zcash.avado.dnp.dappnode.eth:0.0.2'
     build:
       context: ./build
       args:
-        VERSION: v5.2.0
+        VERSION: v5.3.2
     volumes:
       - 'data:/srv/zcashd/.zcash/'
       - 'params:/srv/zcashd/.zcash-params/'
     ports:
-      - '8233:8233'
+      - '8233'
       - '8232'
     environment:
       - ZCASHD_RPCUSER=avado
